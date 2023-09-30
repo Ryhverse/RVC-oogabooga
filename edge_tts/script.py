@@ -45,7 +45,7 @@ params = {
     'show_text': True,
     'autoplay': True,
     'rvc': True,
-    'rvc_model': 'RikkuV2/RikkuV2.pth',
+    'rvc_model': None,
     'transpose': 0,
     'index_rate': 1,
     'protect': 0.21,
@@ -152,7 +152,8 @@ def output_modifier(string, state):
         #output_file = Path(f'extensions/edge_tts/outputs/{int(time.time())}.mp3')
         # Assuming mp3_file is the path to your original MP3 file
         output_file = Path(f'extensions/edge_tts/outputs/{int(time.time())}.mp3')
-        wav_file = Path(f'extensions/edge_tts/outputs/myOOGA_TTSaudio.wav')
+        desired_location = Path(r'C:\Users\ryrym_i6sf5hg\Documents\AI_stuff')
+        wav_file = desired_location / 'myOOGA_TTSaudio.wav'
         
         print(f'Outputting audio to {str(output_file)}')
 
